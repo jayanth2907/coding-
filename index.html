@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chatbot - Telangana DTE</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#submit">Submit Document</a></li>
+                <li><a href="#recommendations">Recommendations</a></li>
+            </ul>
+        </nav>
+        <h1>Welcome to Telangana DTE Chatbot</h1>
+        <p>Get assistance with academic queries, course information, career guidance, and more!</p>
+        <button id="start-chat-button">Start Chat</button>
+    </header>
+
+    <!-- Chatbot Section -->
+    <section id="chatbot-section" class="hidden">
+        <div id="chatbot-container">
+            <h2>Ask me anything</h2>
+            <div id="chatbot"></div>
+            <div id="chat-input-container">
+                <input type="text" id="user-message" placeholder="Ask a question..." required>
+                <button id="send-message">Send</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq">
+        <h2>Frequently Asked Questions</h2>
+        <ul>
+            <li><strong>How can I submit my assignment?</strong></li>
+            <li><strong>What are the available courses?</strong></li>
+            <li><strong>What career opportunities are available after my course?</strong></li>
+        </ul>
+    </section>
+
+    <!-- Document Submission Section -->
+    <section id="submit">
+        <h2>Submit Document</h2>
+        <form id="document-form">
+            <input type="file" id="file-upload" required>
+            <button type="submit">Submit Document</button>
+        </form>
+    </section>
+
+    <!-- Recommendations Section -->
+    <section id="recommendations">
+        <h2>Personalized Recommendations</h2>
+        <button id="recommendations-button">Get Recommendations</button>
+        <div id="recommendations-list"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Department of Technical Education, Telangana. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
